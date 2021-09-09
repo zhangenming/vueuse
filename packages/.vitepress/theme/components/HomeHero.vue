@@ -26,7 +26,7 @@
     </div>
 
     <p class="actions flex gap-2 place-content-center">
-      <a class="get-started" href="/guide">Get Started <carbon:arrow-right class="icon" /></a>
+      <a class="get-started" href="/guide/">Get Started <carbon:arrow-right class="icon" /></a>
       <a class="setup" href="/functions">All Functions</a>
       <a class="setup" href="https://github.com/vueuse/vueuse" target="_blank"><carbon:logo-github class="icon" /> GitHub</a>
     </p>
