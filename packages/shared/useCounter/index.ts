@@ -12,12 +12,15 @@ export interface UseCounterOptions {
  * @param [initialValue=0]
  * @param {Object} options
  */
-export function useCounter(initialValue = 0, options: UseCounterOptions = {}) {
+export function useCounter(initialValue = 0, options: UseCounterOptions = {
+  max: Infinity,
+  min: -Infinity,
+}) {
   const count = ref(initialValue)
 
   const {
-    max = Infinity,
-    min = -Infinity,
+    max,
+    min,
   } = options
 
   const inc = (delta = 1) => count.value = Math.min(max, count.value + delta)
