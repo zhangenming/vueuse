@@ -1,8 +1,8 @@
 import { ref } from 'vue-demi'
 
 export interface UseCounterOptions {
-  min?: number
-  max?: number
+  min: number
+  max: number
 }
 
 /**
