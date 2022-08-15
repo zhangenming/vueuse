@@ -25,7 +25,6 @@ export function useCounter(initialValue = 0, options: UseCounterOptions = {}) {
   const get = () => count.value
   const set = (val: number) => (count.value = val)
   const reset = (val = initialValue) => {
-    initialValue = val
     return set(val)
   }
 
