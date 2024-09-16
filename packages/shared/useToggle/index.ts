@@ -19,12 +19,11 @@ export function useToggle<Truthy = true, Falsy = false, T = Truthy | Falsy>(init
  */
 export function useToggle(
   initialValue: MaybeRef<boolean> = false,
-  options: UseToggleOptions<true, false> = {},
-) {
-  const {
+  {
     truthyValue = true,
     falsyValue = false,
-  } = options
+  }: UseToggleOptions<true, false> = {},
+) {
 
   const valueIsRef = isRef(initialValue)
   const _value = ref(initialValue) as Ref<boolean>
